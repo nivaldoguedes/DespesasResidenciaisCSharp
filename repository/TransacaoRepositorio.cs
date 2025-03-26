@@ -3,7 +3,7 @@ using MySql.Data.MySqlClient;
 public class TransacaoRepositorio
 {
     private readonly string? _stringDeConexao;
-
+    
     public TransacaoRepositorio(string stringDeConexao)
     {
         _stringDeConexao = stringDeConexao;

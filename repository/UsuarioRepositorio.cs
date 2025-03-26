@@ -7,7 +7,7 @@ public class UsuarioRepositorio
     public UsuarioRepositorio(string stringDeConexao)
     {
         _stringDeConexao = stringDeConexao;
-    }
+    }    
 
     public List<Usuario> GetUsuarios()
     {

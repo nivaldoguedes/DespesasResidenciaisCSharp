@@ -25,9 +25,9 @@ public class UsuarioControle : ControllerBase
         {
             return BadRequest(new { mensagem = "O nome é obrigatório para cadastrar o usuário." });
         }
-        else if (u.Idade < 0 || u.Idade > 100)
+        else if (u.Idade < 0)
         {
-            return BadRequest(new { message = "Idade inválida. Só é permitido idades entre 0 e 100 anos." });
+            return BadRequest(new { message = "Idade inválida." });
         }
         else
         {
